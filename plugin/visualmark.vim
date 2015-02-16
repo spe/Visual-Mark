@@ -17,10 +17,12 @@ if !has("signs")
  finish
 endif
 
+if !exists('SignColor')
 if &bg == "dark"
- highlight SignColor ctermfg=white ctermbg=blue guifg=white guibg=RoyalBlue3
+ highlight SignColor ctermfg=black ctermbg=51 guifg=white guibg=RoyalBlue3
 else
- highlight SignColor ctermbg=white ctermfg=blue guibg=grey guifg=RoyalBlue3
+ highlight SignColor ctermbg=black ctermfg=51 guibg=grey guifg=RoyalBlue3
+endif
 endif
 
 " ---------------------------------------------------------------------
